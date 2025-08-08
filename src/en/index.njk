@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
-    <link rel="icon" type="image/png" href="./static/favicon.png"/>
+    <link rel="icon" type="image/png" href="/static/favicon.png"/>
 
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}
@@ -55,8 +55,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" data-tag="font">
 
-    <link rel="stylesheet" href="./static/style.css" />
-    <link rel="stylesheet" href="./static/index.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/index.css" />
   </head>
   <body>
     <div class="home-container">
@@ -72,10 +72,11 @@
 
       <div class="home-blog">
         {# Loop through the 'book' collection, sorted by pub_date (latest first) #}
-          {# The 'true' argument means descending order (latest first) #}
-          {% for book in collections.book | sort(true, false, 'data.pub_date') %}
-          {# Include the reusable book card component for each book #}
-          {% include "book-card.njk" %}
+        {# The 'true' argument means descending order (latest first) #}
+        {% for book in collections.book | sort(true, false, 'data.pub_date') %}
+          {% if book.data.lang == "en" %}
+            {% include "book-card.njk" %}
+          {% endif %}
         {% endfor %}
       </div>
 

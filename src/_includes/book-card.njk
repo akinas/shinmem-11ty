@@ -5,19 +5,19 @@
   <div class="blog-post-card3-blog-post-card blog-post-card3-root-class-name1">
     <a href="{{ book.data.read_more_url }}">
       <img
-        alt="{{ book.data.title_en }} book cover"
+        alt="{{ book.data.title }} book cover"
         src="{{ book.data.image_src }}"
         class="blog-post-card3-image"
       />
     </a>
     <div class="blog-post-card3-container">
       <span class="blog-post-card3-text">
-        <span>{{ book.data.author_en }} | <span dir="rtl">{{ book.data.author_he }}</span></span>
+        <span>{{ book.data.author }}</span>
       </span>
       <h1 class="blog-post-card3-text1">
-        <span><a href="{{ book.data.read_more_url }}">{{ book.data.title_en }} | <span dir="rtl">{{ book.data.title_he }}</span></a>
+        <span><a href="{{ book.data.read_more_url }}">{{ book.data.title }}</a>
           {% if book.data.edition_year %}
-            <em style="font-size:70%;font-weight: normal;">({{ book.data.edition_year }} edition)</em>
+            <em style="font-size:70%;font-weight: normal;">({{ book.data.edition_year }})</em>
           {% endif %}
         </span>
       </h1>
