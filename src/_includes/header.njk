@@ -1,14 +1,29 @@
 {#  src/_includes/header.njk #}
 <header data-role="Header" class="home-banner">
-  {# Language Switch Menu #}
+  {# Language Switch Menu - Modern Toggle Design #}
   <div class="lang-switch-container">
-    {% if page.lang == 'he' %}
-      <a href="{{ page.url | replace('/he/', '/en/') }}" class="lang-switch-link">English</a>
-      <span class="lang-switch-current">עברית</span>
-    {% else %}
-      <a href="{{ '/en/' }}" class="lang-switch-link">English</a>
-      <span class="lang-switch-current">עברית</span>
-    {% endif %}
+    <div class="lang-switch-toggle">
+      {% if page.lang == 'he' %}
+        <a href="{{ page.url | replace('/he/', '/en/') }}" class="lang-option lang-option-inactive" data-lang="en">
+          <span class="lang-code">EN</span>
+          <span class="lang-name">English</span>
+        </a>
+        <span class="lang-option lang-option-active" data-lang="he">
+          <span class="lang-code">עב</span>
+          <span class="lang-name">עברית</span>
+        </span>
+      {% else %}
+        <span class="lang-option lang-option-active" data-lang="en">
+          <span class="lang-code">EN</span>
+          <span class="lang-name">English</span>
+        </span>
+        <a href="{{ page.url | replace('/en/', '/he/') }}" class="lang-option lang-option-inactive" data-lang="he">
+          <span class="lang-code">עב</span>
+          <span class="lang-name">עברית</span>
+        </a>
+      {% endif %}
+      <div class="lang-switch-slider"></div>
+    </div>
   </div>
   
   {# Optional back navigation - only show if not on homepage #}
