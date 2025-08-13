@@ -1,18 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title_en }} by {{ author }}</title>
-</head>
-<body>
-  <header>
-    <p><a href="/">← Back to Book List</a></p>
-    <h1>{{ title }} ({{ title_en }})</h1>
-    <p>By {{ author }} ({{ year }})</p>
-  </header>
-  <main>
-    {{ content | safe }} {# This renders the Markdown content below the Front Matter #}
-  </main>
-</body>
-</html>
+{% extends "base.njk" %}
+
+{% block title %}{{ title }} by {{ author }} | ShinMem | שמע מינה{% endblock %}
+{% block og_title %}{{ title }} by {{ author }} | ShinMem | שמע מינה{% endblock %}
+
+{% block navigation %}
+<div class="book-navigation">
+  <a href="{% if page.lang == 'he' %}/{% else %}/en/{% endif %}" class="back-home-link">
+    ← {% if page.lang == 'he' %}חזור לעמוד הבית{% else %}Back to Home{% endif %}
+  </a>
+</div>
+{% endblock %}
+
+{% block additional_css %}
+<style>
+  /* Book-specific styles */
+  .book-navigation {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+  }
+  
+  .back-home-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+  }
+  
+  .back-home-link:hover {
+    opacity: 0.8;
+  }
+  
+  .book-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+  }
+  
+  .book-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 30px;
+  }
+  
+  .book-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--dl-color-gray-black);
+  }
+  
+  .book-author {
+    font-size: 1.3em;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .book-edition {
+    font-size: 1.1em;
+    color: #888;
+    font-style: italic;
+  }
+  
+  .book-main-content {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  
+  .book-main-content h1,
+  .book-main-content h2,
+  .book-main-content h3 {
+    margin: 30px 0 15px 0;
+    color: var(--dl-color-gray-black);
+  }
+  
+  .book-main-content p {
+    margin-bottom: 20px;
+  }
+  
+  .book-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+  }
+  
+  /* RTL adjustments */
+  html[dir="rtl"] .book-navigation {
+    left: auto;
+    right: 20px;
+  }
+  
+  html[dir="rtl"] .book-content {
+    text-align: right;
+  }
+  
+  html[dir="rtl"] .book-header {
+    text-align: center;
+  }
+</style>
+{% endblock %}
+
+{% block main_content %}
+<main class="book-content">
+  <div class="book-header">
+    <h1 class="book-title">{{ title }}{% if title_en and title_en != title %} ({{ title_en }}){% endif %}</h1>
+    <p class="book-author">By {{ author }}{% if year %} ({{ year }}){% endif %}</p>
+    {% if edition_year %}
+      <p class="book-edition">{{ edition_year }} Edition</p>
+    {% endif %}
+  </div>
+  
+  <div class="book-main-content">
+    {{ content | safe }}
+  </div>
+  
+  {# Book Actions #}
+  <div class="book-actions">
+    {% if status == 'available' and buy_now_url %}
+      <a href="{{ buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button home-button">
+        {% if page.lang == 'he' %}קנה עכשיו{% else %}Buy Now{% endif %}
+      </a>
+    {% endif %}
+    
+    {% if read_more_url %}
+      <a href="{{ read_more_url }}" target="_blank" rel="noreferrer noopener" class="button">
+        {% if page.lang == 'he' %}קרא עוד{% else %}Read More{% endif %}
+      </a>
+    {% endif %}
+  </div>
+</main>
+{% endblock %}
