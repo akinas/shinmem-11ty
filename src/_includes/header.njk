@@ -1,0 +1,10 @@
+<header data-role="Header" class="home-banner">
+  <span class="home-text">
+    <span class="home-text1">{{ 'homeText1' | i18n(lang.code) }}</span>
+  </span>
+  <h1 class="home-text2" {% if lang.code == 'he' %}dir="rtl"{% endif %}>{{ 'homeText2' | i18n(lang.code) }}</h1>
+  <span class="home-text3">
+    {{ 'homeText3' | i18n(lang.code) }}
+  </span>
+  {% include "lang-switcher.njk" %}
+</header>

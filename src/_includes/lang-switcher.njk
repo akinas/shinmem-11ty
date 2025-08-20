@@ -1,0 +1,46 @@
+<div class="lang-switch-container">
+    <div class="lang-switch-toggle">
+      {# Handle homepage URLs as a special case #}
+      {% if page.url == '/' %}
+        {# Currently on Hebrew homepage, link to English version #}
+        <a href="/en/" class="lang-option lang-option-inactive" data-lang="en">
+          <span class="lang-code">EN</span>
+          <span class="lang-name">English</span>
+        </a>
+        <span class="lang-option lang-option-active" data-lang="he">
+          <span class="lang-code">עב</span>
+          <span class="lang-name">עברית</span>
+        </span>
+      {% elif page.url == '/en/' %}
+        {# Currently on English homepage, link to Hebrew version #}
+        <span class="lang-option lang-option-active" data-lang="en">
+          <span class="lang-code">EN</span>
+          <span class="lang-name">English</span>
+        </span>
+        <a href="/" class="lang-option lang-option-inactive" data-lang="he">
+          <span class="lang-code">עב</span>
+          <span class="lang-name">עברית</span>
+        </a>
+      {# Handle internal page URLs #}
+      {% elif page.lang == 'he' %}
+        <a href="{{ page.url | replace('/he/', '/en/') }}" class="lang-option lang-option-inactive" data-lang="en">
+          <span class="lang-code">EN</span>
+          <span class="lang-name">English</span>
+        </a>
+        <span class="lang-option lang-option-active" data-lang="he">
+          <span class="lang-code">עב</span>
+          <span class="lang-name">עברית</span>
+        </span>
+      {% else %}
+        <span class="lang-option lang-option-active" data-lang="en">
+          <span class="lang-code">EN</span>
+          <span class="lang-name">English</span>
+        </span>
+        <a href="{{ page.url | replace('/en/', '/he/') }}" class="lang-option lang-option-inactive" data-lang="he">
+          <span class="lang-code">עב</span>
+          <span class="lang-name">עברית</span>
+        </a>
+      {% endif %}
+      <div class="lang-switch-slider"></div>
+    </div>
+  </div>
