@@ -1,9 +1,10 @@
 {# src/_includes/book-card.njk #}
 {# This template is included by index.njk and receives the 'book' variable from the loop. #}
+{% set book_url = '/' ~ page.lang ~ '/books/' ~ (book.data.slug or book.fileSlug) ~ '/' %}
 
 <div class="home-container3"> {# This container might need adjustment based on your CSS layout #}
   <div class="blog-post-card3-blog-post-card blog-post-card3-root-class-name1">
-    <a href="{{ book.data.read_more_url }}">
+    <a href="{{ book_url }}">
       <img
         alt="{{ book.data.title }} book cover"
         src="{{ book.data.image_src }}"
@@ -15,7 +16,7 @@
         <span>{{ book.data.author }}</span>
       </span>
       <h1 class="blog-post-card3-text1">
-        <span><a href="{{ book.data.read_more_url }}">{{ book.data.title }}</a>
+        <span><a href="{{ book_url }}">{{ book.data.title }}</a>
           {% if book.data.edition_year %}
             <em style="font-size:70%;font-weight: normal;">({{ book.data.edition_year }})</em>
           {% endif %}
@@ -25,7 +26,7 @@
         <span class="blog-post-card3-text2">
           <span>{{ book.data.description | safe }}</span> {# Use | safe to render HTML from Markdown #}
         </span>
-        <span class="blog-post-card3-text3"><a href="{{ book.data.read_more_url }}">Read More</a></span>
+        <span class="blog-post-card3-text3"><a href="{{ book_url }}">Read More</a></span>
       </div>
       
       {# Conditional button based on book status #}

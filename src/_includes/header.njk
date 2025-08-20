@@ -4,7 +4,7 @@
   <div class="lang-switch-container">
     <div class="lang-switch-toggle">
       {% if page.lang == 'he' %}
-        <a href="{{ page.url | replace('/he/', '/en/') }}" class="lang-option lang-option-inactive" data-lang="en">
+        <a href="{{ '/en/' if page.url == '/' else page.url | replace('/he/', '/en/') }}" class="lang-option lang-option-inactive" data-lang="en">
           <span class="lang-code">EN</span>
           <span class="lang-name">English</span>
         </a>
@@ -17,7 +17,7 @@
           <span class="lang-code">EN</span>
           <span class="lang-name">English</span>
         </span>
-        <a href="{{ page.url | replace('/en/', '/he/') }}" class="lang-option lang-option-inactive" data-lang="he">
+        <a href="{{ '/' if page.url == '/en/' else page.url | replace('/en/', '/he/') }}" class="lang-option lang-option-inactive" data-lang="he">
           <span class="lang-code">עב</span>
           <span class="lang-name">עברית</span>
         </a>
@@ -30,10 +30,10 @@
   {% block navigation %}{% endblock %}
   
   <span class="home-text">
-    <span class="home-text1">Reviving Ancient Insights, Illuminating&nbsp;Modern Minds</span>
+    <span class="home-text1">{{ i18n.home_text1[page.lang] | safe }}</span>
   </span>
-  <h1 class="home-text2">ShinMem | <span dir="rtl">שמע מינה</span></h1>
+  <h1 class="home-text2">{{ i18n.home_text2[page.lang] | safe }}</h1>
   <span class="home-text3">
-    Unlock the timeless wisdom of Jewish&nbsp;thought with our curated collection of classical medieval texts
+    {{ i18n.home_text3[page.lang] | safe }}
   </span>
 </header>
