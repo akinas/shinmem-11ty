@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
   <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VRPQPPVQWT"></script>
@@ -10,8 +10,8 @@
       gtag('config', 'G-VRPQPPVQWT');
     </script>
     
-    <title>ShinMem | שמע מינה</title>
-    <meta property="og:title" content="ShinMem | שמע מינה" />
+    <title>Light of the Lord by Rabbi Hasdai Crescas | ShinMem | שמע מינה</title>
+    <meta property="og:title" content="Light of the Lord by Rabbi Hasdai Crescas | ShinMem | שמע מינה" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -388,6 +388,185 @@
 </style>
     
     
+<style>
+  /* Book-specific styles */
+  .book-navigation {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+  }
+  
+  .back-home-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+  }
+  
+  .back-home-link:hover {
+    opacity: 0.8;
+  }
+  
+  .book-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+  }
+  
+  .book-hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 40px 0;
+  }
+  
+  .book-cover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .book-cover-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .book-cover-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-info {
+    padding: 20px 0;
+  }
+  
+  .book-title {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--dl-color-gray-black);
+    line-height: 1.2;
+  }
+  
+  .book-author {
+    font-size: 1.4em;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .book-edition {
+    font-size: 1.2em;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  
+  .book-actions-hero {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  
+  .book-main-content {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-top: 2px solid #eee;
+  }
+  
+  .book-main-content h1,
+  .book-main-content h2,
+  .book-main-content h3 {
+    margin: 30px 0 15px 0;
+    color: var(--dl-color-gray-black);
+  }
+  
+  .book-main-content p {
+    margin-bottom: 20px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .book-hero {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 30px;
+    }
+    
+    .book-cover-image {
+      max-height: 400px;
+    }
+    
+    .book-title {
+      font-size: 2.2em;
+    }
+    
+    .book-author {
+      font-size: 1.2em;
+    }
+    
+    .book-actions-hero {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .book-hero {
+      padding: 20px 0;
+    }
+    
+    .book-cover-image {
+      max-height: 350px;
+    }
+    
+    .book-title {
+      font-size: 1.8em;
+    }
+    
+    .book-actions-hero {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .book-actions-hero .button {
+      width: 200px;
+      text-align: center;
+    }
+  }
+  
+  /* RTL adjustments */
+  html[dir="rtl"] .book-navigation {
+    left: auto;
+    right: 20px;
+  }
+  
+  html[dir="rtl"] .book-hero {
+    text-align: right;
+  }
+  
+  html[dir="rtl"] .book-main-content {
+    text-align: right;
+  }
+  
+  @media (max-width: 768px) {
+    html[dir="rtl"] .book-hero {
+      text-align: center;
+    }
+  }
+</style>
+
   </head>
   <body>
     <div class="home-container">
@@ -397,14 +576,14 @@
   <div class="lang-switch-container">
     <div class="lang-switch-toggle">
       
-        <a href="/en/" class="lang-option lang-option-inactive" data-lang="en">
+        <span class="lang-option lang-option-active" data-lang="en">
           <span class="lang-code">EN</span>
           <span class="lang-name">English</span>
-        </a>
-        <span class="lang-option lang-option-active" data-lang="he">
+        </span>
+        <a href="/he/books/ohr_2nd_ed/" class="lang-option lang-option-inactive" data-lang="he">
           <span class="lang-code">עב</span>
           <span class="lang-name">עברית</span>
-        </span>
+        </a>
       
       <div class="lang-switch-slider"></div>
     </div>
@@ -414,243 +593,55 @@
   
   
   <span class="home-text">
-    <span class="home-text1">ספרי המופת הנשכחים של הפילוסופיה היהודית</span>
+    <span class="home-text1">Restoring the Lost Canon of Jewish Philosophy</span>
   </span>
-  <h1 class="home-text2">ש&ldquo;מ [שמע מינה]</h1>
+  <h1 class="home-text2">ShinMem | <span dir="rtl">שמע מינה</span></h1>
   <span class="home-text3">
-    מהדורות ביקורתיות של יצירות מופת במחשבת ישראל.
+    Presenting critical editions of rare Jewish philosophical works — faithfully transmitted, spiritually enduring.
   </span>
 </header>
 
       
-        
-      <div class="home-blog">
-        
-        
-        
-          
-        
-          
-        
-          
-            
-
-
-
-<div class="home-container3"> 
-  <div class="blog-post-card3-blog-post-card blog-post-card3-root-class-name1">
-    <a href="/he/books/maamar/">
-      <img
-        alt="מאמר אלוהי book cover"
-        src="https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1691748441/IMG20230811125752_k0fjxr.jpg"
-        class="blog-post-card3-image"
+<main class="book-content">
+  
+  <div class="book-hero">
+    <div class="book-cover-container">
+      <img 
+        src="https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1691748435/IMG20230811125809-EDIT_ebh5iw.jpg" 
+        alt="Light of the Lord book cover" 
+        class="book-cover-image"
+        loading="lazy"
       />
-    </a>
-    <div class="blog-post-card3-container">
-      <span class="blog-post-card3-text">
-        <span>רבי משה בן יוסף הלוי מסביליה</span>
-      </span>
-      <h1 class="blog-post-card3-text1">
-        <span><a href="/he/books/maamar/">מאמר אלוהי</a>
-          
-        </span>
-      </h1>
-      <div class="blog-post-card3-container1">
-        <span class="blog-post-card3-text2">
-          <span>Rabbi Moshe ben Yosef Halevi of Seville, a 13th-century Jewish philosopher, was an authority in metaphysics, geometry, and music theory. In his <em>Metaphysical Treatise</em>, he explores the question of the identity of the Prime Mover, a crucial issue in medieval philosophy.</span> 
-        </span>
-        <span class="blog-post-card3-text3"><a href="/he/books/maamar/">Read More</a></span>
+    </div>
+    <div class="book-info">
+      <h1 class="book-title">Light of the Lord</h1>
+      <p class="book-author">By Rabbi Hasdai Crescas</p>
+      
+        <p class="book-edition">2021 Edition</p>
+      
+      
+      
+      <div class="book-actions-hero">
+        
+        
+        
+          <a href="https://crescas.org/docs/editions/" target="_blank" rel="noreferrer noopener" class="button">
+            Read More
+          </a>
+        
       </div>
-      
-      
-      
-        <a
-          href="https://www.amazon.com/dp/B0C7J5HBV9"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="blog-post-card3-link"
-          style="cursor:pointer;"
-        >
-          <div class="app-component-container">
-            <button type="button" class="button home-button">
-              <span>Buy Now</span>
-            </button>
-          </div>
-        </a>
-      
-      
     </div>
   </div>
-</div>
+  
+  <div class="book-main-content">
+    <p>Here is the exciting content for the second book.</p>
+<p>Read it now!</p>
 
-          
-        
-          
-        
-          
-        
-          
-            
-
-
-
-<div class="home-container3"> 
-  <div class="blog-post-card3-blog-post-card blog-post-card3-root-class-name1">
-    <a href="/he/books/ohr_3rd_ed/">
-      <img
-        alt="אור השם book cover"
-        src="https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1691748441/IMG20230811125740_arsllh.jpg"
-        class="blog-post-card3-image"
-      />
-    </a>
-    <div class="blog-post-card3-container">
-      <span class="blog-post-card3-text">
-        <span>רבי חסדאי קרשקש</span>
-      </span>
-      <h1 class="blog-post-card3-text1">
-        <span><a href="/he/books/ohr_3rd_ed/">אור השם</a>
-          
-            <em style="font-size:70%;font-weight: normal;">(2023)</em>
-          
-        </span>
-      </h1>
-      <div class="blog-post-card3-container1">
-        <span class="blog-post-card3-text2">
-          <span><em>Light of the Lord</em> is a classic work of Jewish philosophy written by Hasdai Crescas, a renowned medieval Jewish philosopher, rabbi, and statesman. This new Hebrew edition of the book offers a corrected version of the original text, based on the most authentic manuscript available.</span> 
-        </span>
-        <span class="blog-post-card3-text3"><a href="/he/books/ohr_3rd_ed/">Read More</a></span>
-      </div>
-      
-      
-      
-        <a
-          href="https://www.amazon.com/dp/9655982092"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="blog-post-card3-link"
-          style="cursor:pointer;"
-        >
-          <div class="app-component-container">
-            <button type="button" class="button home-button">
-              <span>Buy Now</span>
-            </button>
-          </div>
-        </a>
-      
-      
-    </div>
   </div>
-</div>
+  
+  
+</main>
 
-          
-        
-          
-        
-          
-        
-          
-            
-
-
-
-<div class="home-container3"> 
-  <div class="blog-post-card3-blog-post-card blog-post-card3-root-class-name1">
-    <a href="/he/books/ohr_2nd_ed/">
-      <img
-        alt="אור השם book cover"
-        src="https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1691748435/IMG20230811125809-EDIT_ebh5iw.jpg"
-        class="blog-post-card3-image"
-      />
-    </a>
-    <div class="blog-post-card3-container">
-      <span class="blog-post-card3-text">
-        <span>רבי חסדאי קרשקש</span>
-      </span>
-      <h1 class="blog-post-card3-text1">
-        <span><a href="/he/books/ohr_2nd_ed/">אור השם</a>
-          
-            <em style="font-size:70%;font-weight: normal;">(2021)</em>
-          
-        </span>
-      </h1>
-      <div class="blog-post-card3-container1">
-        <span class="blog-post-card3-text2">
-          <span><em>Light of the Lord</em> is a classic work of Jewish philosophy written by Hasdai Crescas, a renowned medieval Jewish philosopher, rabbi, and statesman. This new Hebrew edition of the book offers a corrected version of the original text, based on the most authentic manuscript available.</span> 
-        </span>
-        <span class="blog-post-card3-text3"><a href="/he/books/ohr_2nd_ed/">Read More</a></span>
-      </div>
-      
-      
-      
-        <div class="app-component-container">
-          <button type="button" class="button">
-            <span>Out of Print</span>
-          </button>
-        </div>
-      
-      
-    </div>
-  </div>
-</div>
-
-          
-        
-          
-        
-          
-        
-          
-            
-
-
-
-<div class="home-container3"> 
-  <div class="blog-post-card3-blog-post-card blog-post-card3-root-class-name1">
-    <a href="/he/books/ohr_1st_ed/">
-      <img
-        alt="אור השם book cover"
-        src="https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1691748444/IMG20230811125857-EDIT_gt4fex.jpg"
-        class="blog-post-card3-image"
-      />
-    </a>
-    <div class="blog-post-card3-container">
-      <span class="blog-post-card3-text">
-        <span>רבי חסדאי קרשקש</span>
-      </span>
-      <h1 class="blog-post-card3-text1">
-        <span><a href="/he/books/ohr_1st_ed/">אור השם</a>
-          
-            <em style="font-size:70%;font-weight: normal;">(2019)</em>
-          
-        </span>
-      </h1>
-      <div class="blog-post-card3-container1">
-        <span class="blog-post-card3-text2">
-          <span><em>Light of the Lord</em> is a classic work of Jewish philosophy written by Hasdai Crescas, a renowned medieval Jewish philosopher, rabbi, and statesman. This new Hebrew edition of the book offers a corrected version of the original text, based on the most authentic manuscript available.</span> 
-        </span>
-        <span class="blog-post-card3-text3"><a href="/he/books/ohr_1st_ed/">Read More</a></span>
-      </div>
-      
-      
-      
-        <div class="app-component-container">
-          <button type="button" class="button">
-            <span>Out of Print</span>
-          </button>
-        </div>
-      
-      
-    </div>
-  </div>
-</div>
-
-          
-        
-      </div>
-
-
-
-      
 
       
 <footer class="home-footer">
@@ -668,7 +659,7 @@
 
   <div class="home-separator"></div>
   <div class="home-container7">
-    <span class="home-text8">© 2025 שמע מינה, כל הזכויות שמורות.</span>
+    <span class="home-text8">© 2025 ShinMem, All Rights Reserved.</span>
     <div class="home-icon-group2">
       <a href="https://twitter.com/shinmem/"><svg viewBox="0 0 950.8571428571428 1024" class="home-icon12">
         <path
