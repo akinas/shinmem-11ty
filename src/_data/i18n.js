@@ -1,18 +1,18 @@
 module.exports = {
   home_text1: {
-    en: "Reviving Ancient Insights, Illuminating&nbsp;Modern Minds",
-    he: "hebrew translation"
+    en: "Restoring the Lost Canon of Jewish Philosophy",
+    he: "ספרי המופת הנשכחים של הפילוסופיה היהודית"
   },
   home_text2: {
     en: "ShinMem | <span dir=\"rtl\">שמע מינה</span>",
-    he: "hebrew translation"
+    he: "ש&ldquo;מ [שמע מינה]"
   },
   home_text3: {
-    en: "Unlock the timeless wisdom of Jewish&nbsp;thought with our curated collection of classical medieval texts",
-    he: "hebrew translation"
+    en: "Presenting critical editions of rare Jewish philosophical works — faithfully transmitted, spiritually enduring.",
+    he: "מהדורות ביקורתיות של יצירות מופת במחשבת ישראל."
   },
   copyright: {
     en: "ShinMem, All Rights Reserved.",
-    he: "hebrew translation"
+    he: "שמע מינה, כל הזכויות שמורות."
   }
 };
