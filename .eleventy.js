@@ -21,8 +21,7 @@ module.exports = async function(eleventyConfig) {
 	});
 
   
-  eleventyConfig.addPassthroughCopy("src/static/index.css");
-  eleventyConfig.addPassthroughCopy("src/static/style.css");
+  eleventyConfig.addPassthroughCopy("src/static/app.css");
   eleventyConfig.addPassthroughCopy("src/static/favicon.png");
   
   eleventyConfig.addGlobalData("currentYear", () => new Date().getFullYear());
