@@ -32,7 +32,11 @@
   <span class="home-text">
     <span class="home-text1">{{ i18n.home_text1[page.lang] | safe }}</span>
   </span>
-  <h1 class="home-text2">{{ i18n.home_text2[page.lang] | safe }}</h1>
+  {% set homepage_url = '/' %}
+{% if page.lang === 'en' %}
+    {% set homepage_url = '/en/' %}
+{% endif %}
+  <h1 class="home-text2"><a href="{{ homepage_url | url }}">{{ i18n.home_text2[page.lang] | safe }}</a></h1>
   <span class="home-text3">
     {{ i18n.home_text3[page.lang] | safe }}
   </span>
