@@ -573,6 +573,8 @@ html[dir="rtl"] .book-main-content {
 .blog-post-card3-text2 {
   color: var(--dl-color-gray-500);
   margin-bottom: var(--dl-space-space-halfunit);
+  font-size: larger;
+  line-height: 1.3;
 }
 .blog-post-card3-text3 {
   color: var(--dl-color-primary-300);
@@ -824,6 +826,7 @@ html[dir="rtl"] .book-main-content {
 }
 .home-container3 {
   display: flex;
+  width: 100%;
   align-items: center;
   margin-bottom: var(--dl-space-space-twounits);
   flex-direction: column;

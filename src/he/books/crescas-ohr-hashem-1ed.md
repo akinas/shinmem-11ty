@@ -7,10 +7,12 @@ author: "רבי חסדאי קרשקש"
 image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1691748444/IMG20230811125857-EDIT_gt4fex.jpg"
 read_more_url: "https://crescas.org/docs/editions/"
 status: "out-of-print"
-description: "<em>Light of the Lord</em> is a classic work of Jewish philosophy written by Hasdai Crescas, a renowned medieval Jewish philosopher, rabbi, and statesman. This new Hebrew edition of the book offers a corrected version of the original text, based on the most authentic manuscript available."
+description: "המהדורה הביקורתית של ספר <em>אור השם</em>, המשחזרת את הנוסח המקורי והמדויק של החיבור הגדול של רבי חסדאי קרשקש על פי כתב היד הקדום ביותר."
 tags: "book"
 layout: "book.njk"  # This links it to a Nunjucks layout file
 ---
+
+המהדורה הביקורתית הראשונה של <em>אור השם</em>, שהעמידה לראשונה נוסח המבוסס על כתב היד הקדום ביותר והציבה רף חדש של נאמנות טקסטואלית.
 
 * 200 עותקים
 * כריכה קשה

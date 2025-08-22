@@ -43,4 +43,12 @@ module.exports = {
     en: "Read More",
     he: "למידע נוסף"
   },
+  out_of_print: {
+    en: "Out of Print",
+    he: "המלאי אזל"
+  },
+  buy_now: {
+    en: "Buy Now",
+    he: "קנה עכשיו"
+  }
 };

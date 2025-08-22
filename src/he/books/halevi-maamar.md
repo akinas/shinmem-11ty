@@ -7,10 +7,12 @@ image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v16
 read_more_url: "https://crescas.org/en/docs/library/maamar/"
 buy_now_url: "https://www.amazon.com/dp/B0C7J5HBV9"
 status: "available"
-description: "Rabbi Moshe ben Yosef Halevi of Seville, a 13th-century Jewish philosopher, was an authority in metaphysics, geometry, and music theory. In his <em>Metaphysical Treatise</em>, he explores the question of the identity of the Prime Mover, a crucial issue in medieval philosophy."
+description: "רבי משה בן יוסף הלוי מסביליה, פילוסוף יהודי בולט מהמאה ה-13, נחשב לסמכות עליונה במטאפיזיקה, גיאומטריה ותורת המוזיקה. ספרו <em>מאמר אלוהי</em>, עוסק בשאלת זהותו של המניע הראשון, אחת השאלות המרכזיות בפילוסופיה של ימי הביניים."
 tags: "book"
 layout: "book.njk"
 ---
+
+### מהדורה ביקורתית של המקור ערבי־יהודי ותרגום עברי אנונימי מימי הביניים
 
 רבי משה בן יוסף הלוי מסביליה היה פילוסוף יהודי שפעל בספרד במאה השלוש עשרה. חיבורו המוצג כאן לראשונה מתווה בצורה מתומצתת את עיקרי הויכוח שהעסיק פילוסופים בימי הביניים: שאלת זהותו של המניע הראשון. ר' משה הלוי בחר לחלוק בנושא זה על אבן רושד שהגותו התאפיינה לדעתו בסגידה עיוורת לאריסטו, ולאמץ את עמדת אבן סינא. ר' חסדאי קרשקש שככל הנראה דווקא בחוגו תורגם ה"מאמר", החשיב את ר' משה הלוי כאחד מגדולי הפילוסופים וקרוב לודאי שבזכותו הכירו את ר' משה הלוי ר' יוסף אלבו ואברבנאל.
 

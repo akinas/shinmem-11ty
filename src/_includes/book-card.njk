@@ -26,7 +26,7 @@
         <span class="blog-post-card3-text2">
           <span>{{ book.data.description | safe }}</span> {# Use | safe to render HTML from Markdown #}
         </span>
-        <span class="blog-post-card3-text3"><a href="{{ book_url }}">Read More</a></span>
+        <span class="blog-post-card3-text3"><a href="{{ book_url }}">{{ i18n.read_more[page.lang] }}</a></span>
       </div>
       
       {# Conditional button based on book status #}
@@ -40,14 +40,14 @@
         >
           <div class="app-component-container">
             <button type="button" class="button home-button">
-              <span>Buy Now</span>
+              <span>{{ i18n.buy_now[page.lang] }}</span>
             </button>
           </div>
         </a>
       {% else %}
         <div class="app-component-container">
           <button type="button" class="button">
-            <span>Out of Print</span>
+            <span>{{ i18n.out_of_print[page.lang] }}</span>
           </button>
         </div>
       {% endif %}

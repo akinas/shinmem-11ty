@@ -5,13 +5,19 @@ edition_year: 2021
 pub_date: "2021-02-13"
 author: "Rabbi Hasdai Crescas"
 image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1691748435/IMG20230811125809-EDIT_ebh5iw.jpg"
-read_more_url: "https://crescas.org/docs/editions/"
+read_more_url: "https://crescas.org/en/"
 status: "out-of-print"
-description: "<em>Light of the Lord</em> is a classic work of Jewish philosophy written by Hasdai Crescas, a renowned medieval Jewish philosopher, rabbi, and statesman. This new Hebrew edition of the book offers a corrected version of the original text, based on the most authentic manuscript available."
+description: "A corrected reprint of the first edition, introducing minor textual refinements and a redesigned cover while preserving the same authoritive text."
 tags: "book"
 layout: "book.njk"
 ---
 
-Here is the exciting content for the second book.
+### A corrected reprint of the first edition, with a new cover design.
 
-Read it now!
+This edition introduced minor corrections to typographical and textual errors identified after the release of the first edition. While the substance remained unchanged, the refinements in accuracy and presentation further established the work’s reliability.
+
+* Hardcover
+* 240 copies printed
+* 400 pages
+* Dimensions: 145 x 225 mm
+* ISBN: 978-965-599-158-1
