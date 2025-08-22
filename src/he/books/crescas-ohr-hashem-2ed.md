@@ -12,6 +12,8 @@ tags: "book"
 layout: "book.njk"
 ---
 
-Here is the exciting content for the second book.
-
-Read it now!
+* 240 עותקים
+* כריכה קשה
+* 400 עמודים
+* 14.6 על 22.5 סמ'
+* ISBN: 978-965-599-158-1

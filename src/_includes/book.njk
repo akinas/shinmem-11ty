@@ -49,7 +49,7 @@
         
         {% if read_more_url %}
           <a href="{{ read_more_url }}" target="_blank" rel="noreferrer noopener" class="button">
-            {% if page.lang == 'he' %}קרא עוד{% else %}Read More{% endif %}
+            {{ i18n.read_more[page.lang] }}
           </a>
         {% endif %}
       </div>

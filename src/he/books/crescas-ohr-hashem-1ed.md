@@ -12,4 +12,8 @@ tags: "book"
 layout: "book.njk"  # This links it to a Nunjucks layout file
 ---
 
-This is some content for the first book. You can write your book description or full content here.
+* 200 עותקים
+* כריכה קשה
+* 400 עמודים
+* 14.6 על 22.5 סמ'
+* ISBN: 978-965-572-952-8

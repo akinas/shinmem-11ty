@@ -12,7 +12,9 @@ description: "<em>Light of the Lord</em> is a classic work of Jewish philosophy 
 tags: "book"
 layout: "book.njk"
 ---
+## מהדורה שלישית, מתוקנת
 
-Here is the exciting content for the second book.
-
-Read it now!
+* כריכה רכה
+* 393 עמודים
+* 16 על 24 סמ'
+* ISBN: 978-965-598-209-1

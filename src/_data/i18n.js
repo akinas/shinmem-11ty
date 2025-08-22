@@ -38,5 +38,9 @@ module.exports = {
   sold_out: {
     en: "Sold Out",
     he: "המלאי אזל"
-  }
+  },
+  read_more: {
+    en: "Read More",
+    he: "למידע נוסף"
+  },
 };
