@@ -6,191 +6,12 @@
 {% block navigation %}
 <div class="book-navigation">
   <a href="{% if page.lang == 'he' %}/{% else %}/en/{% endif %}" class="back-home-link">
-    ← {% if page.lang == 'he' %}חזור לעמוד הבית{% else %}Back to Home{% endif %}
+    ← {% if page.lang == 'he' %}חזרה לעמוד הבית{% else %}Back to Home{% endif %}
   </a>
 </div>
 {% endblock %}
 
-{% block additional_css %}
-<style>
-  /* Book-specific styles */
-  .book-navigation {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 10;
-  }
-  
-  .back-home-link {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: opacity 0.3s ease;
-  }
-  
-  .back-home-link:hover {
-    opacity: 0.8;
-  }
-  
-  .book-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    line-height: 1.6;
-  }
-  
-  .book-hero {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
-    align-items: center;
-    margin-bottom: 60px;
-    padding: 40px 0;
-  }
-  
-  .book-cover-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .book-cover-image {
-    max-width: 100%;
-    height: auto;
-    max-height: 500px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .book-cover-image:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  }
-  
-  .book-info {
-    padding: 20px 0;
-  }
-  
-  .book-title {
-    font-size: 2.8em;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: var(--dl-color-gray-black);
-    line-height: 1.2;
-  }
-  
-  .book-author {
-    font-size: 1.4em;
-    color: #666;
-    margin-bottom: 8px;
-    font-weight: 500;
-  }
-  
-  .book-edition {
-    font-size: 1.2em;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 30px;
-  }
-  
-  .book-actions-hero {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 25px;
-  }
-  
-  .book-main-content {
-    font-size: 1.1em;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    border-top: 2px solid #eee;
-  }
-  
-  .book-main-content h1,
-  .book-main-content h2,
-  .book-main-content h3 {
-    margin: 30px 0 15px 0;
-    color: var(--dl-color-gray-black);
-  }
-  
-  .book-main-content p {
-    margin-bottom: 20px;
-  }
-  
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
-    .book-hero {
-      grid-template-columns: 1fr;
-      text-align: center;
-      gap: 30px;
-    }
-    
-    .book-cover-image {
-      max-height: 400px;
-    }
-    
-    .book-title {
-      font-size: 2.2em;
-    }
-    
-    .book-author {
-      font-size: 1.2em;
-    }
-    
-    .book-actions-hero {
-      justify-content: center;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .book-hero {
-      padding: 20px 0;
-    }
-    
-    .book-cover-image {
-      max-height: 350px;
-    }
-    
-    .book-title {
-      font-size: 1.8em;
-    }
-    
-    .book-actions-hero {
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .book-actions-hero .button {
-      width: 200px;
-      text-align: center;
-    }
-  }
-  
-  /* RTL adjustments */
-  html[dir="rtl"] .book-navigation {
-    left: auto;
-    right: 20px;
-  }
-  
-  html[dir="rtl"] .book-hero {
-    text-align: right;
-  }
-  
-  html[dir="rtl"] .book-main-content {
-    text-align: right;
-  }
-  
-  @media (max-width: 768px) {
-    html[dir="rtl"] .book-hero {
-      text-align: center;
-    }
-  }
-</style>
-{% endblock %}
+
 
 {% block main_content %}
 <main class="book-content">
@@ -206,9 +27,9 @@
     </div>
     <div class="book-info">
       <h1 class="book-title">{{ title }}{% if title_en and title_en != title %} ({{ title_en }}){% endif %}</h1>
-      <p class="book-author">By {{ author }}{% if year %} ({{ year }}){% endif %}</p>
+      <p class="book-author">{{ author }}{% if year %} ({{ year }}){% endif %}</p>
       {% if edition_year %}
-        <p class="book-edition">{{ edition_year }} Edition</p>
+        <p class="book-edition">{{ i18n.edition[page.lang] }} {{ edition_year }}</p>
       {% endif %}
       
       {# Book Actions - moved to hero for better UX #}
@@ -217,7 +38,14 @@
           <a href="{{ buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button home-button">
             {% if page.lang == 'he' %}קנה עכשיו{% else %}Buy Now{% endif %}
           </a>
-        {% endif %}
+          {% else %}
+        <div class="app-component-container">
+          <button type="button" class="button">
+            <span>{{ i18n.sold_out[page.lang] }}</span>
+          </button>
+        </div>
+      {% endif %}
+        
         
         {% if read_more_url %}
           <a href="{{ read_more_url }}" target="_blank" rel="noreferrer noopener" class="button">

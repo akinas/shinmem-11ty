@@ -24,18 +24,15 @@
       {% endif %}
       <div class="lang-switch-slider"></div>
     </div>
-  </div>
-  
-  {# Optional back navigation - only show if not on homepage #}
-  {% block navigation %}{% endblock %}
+  </div> 
   
   <span class="home-text">
     <span class="home-text1">{{ i18n.home_text1[page.lang] | safe }}</span>
   </span>
   {% set homepage_url = '/' %}
-{% if page.lang === 'en' %}
-    {% set homepage_url = '/en/' %}
-{% endif %}
+  {% if page.lang === 'en' %}
+      {% set homepage_url = '/en/' %}
+  {% endif %}
   <h1 class="home-text2"><a href="{{ homepage_url | url }}">{{ i18n.home_text2[page.lang] | safe }}</a></h1>
   <span class="home-text3">
     {{ i18n.home_text3[page.lang] | safe }}

@@ -12,7 +12,31 @@ module.exports = {
     he: "הכתובת לספרי מופת של מחשבת ישראל נדירים — מהדורות נאמנות למקור של יצירות נצחיות ברוחן."
   },
   copyright: {
-    en: "ShinMem, All Rights Reserved.",
-    he: "שמע מינה, כל הזכויות שמורות."
+    en: "Daniel Levin, All Rights Reserved.",
+    he: "דניאל לוין, כל הזכויות שמורות."
+  },
+  nav_homepage: {
+    en: "Home",
+    he: "עמוד הבית"
+  },
+  nav_explore: {
+    en: "Sitemap",
+    he: "מפת האתר"
+  },
+  nav_contact: {
+    en: "Contact Us",
+    he: "צור קשר"
+  },
+  nav_social: {
+    en: "Stay Connected",
+    he: "עקבו אחרינו"
+  },
+  edition: {
+    en: "Edition year:",
+    he: "שנת מהדורה:"
+  },
+  sold_out: {
+    en: "Sold Out",
+    he: "המלאי אזל"
   }
 };
