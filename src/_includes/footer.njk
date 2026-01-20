@@ -99,7 +99,10 @@
   {# Copyright Bar #}
   <div class="footer-bottom">
     <div class="footer-bottom-content">
-      <span class="footer-copyright">© {{ currentYear }} {{ i18n.copyright[page.lang] }}</span>
+      <span class="footer-copyright">© <span id="copyright-year">2026</span> {{ i18n.copyright[page.lang] }}</span>
+      <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+      </script>
       {# footer links 
       <div class="footer-bottom-links">
         <a href="#" class="footer-bottom-link">{% if page.lang == 'he' %}מדיניות פרטיות{% else %}Privacy{% endif %}</a>

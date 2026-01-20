@@ -44,6 +44,30 @@
             </button>
           </div>
         </a>
+        
+        {% if book.data.il_buy_now_url %}
+          <div style="margin-top: 5px;">
+             <a
+              href="{{ book.data.il_buy_now_url }}"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="blog-post-card3-link"
+              style="cursor:pointer;"
+            >
+              <div class="app-component-container">
+                <button type="button" class="button home-button il-buy-button">
+                   <svg class="il-flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16">
+                     <rect width="22" height="16" fill="#fff"/>
+                     <rect y="2" width="22" height="3" fill="#0038b8"/>
+                     <rect y="11" width="22" height="3" fill="#0038b8"/>
+                     <polygon points="11,4.5 13,8 11,11.5 9,8" stroke="#0038b8" stroke-width="1" fill="none"/>
+                   </svg>
+                   <span>{% if page.lang == 'he' %}קנה עכשיו בישראל{% else %}Buy in Israel{% endif %}</span>
+                </button>
+              </div>
+            </a>
+          </div>
+        {% endif %}
       {% else %}
         <div class="app-component-container">
           <button type="button" class="button">
