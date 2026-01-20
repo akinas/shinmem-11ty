@@ -96,6 +96,19 @@
             Buy Now
           </a>
           
+          
+            <a href="https://bookpod.co.il/product/%d7%93%d7%a8%d7%9a-%d7%90%d7%9e%d7%95%d7%a0%d7%94-%d7%94%d7%9e%d7%90%d7%9e%d7%a8-%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%9f/" target="_blank" rel="noreferrer noopener" class="button home-button il-buy-button">
+               <svg class="il-flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16">
+                 <rect width="22" height="16" fill="#fff"/>
+                 <rect y="2" width="22" height="3" fill="#0038b8"/>
+                 <rect y="11" width="22" height="3" fill="#0038b8"/>
+                 <polygon points="11,4.5 13,8 11,11.5 9,8" stroke="#0038b8" stroke-width="1" fill="none"/>
+               </svg>
+               Buy now in Israel
+            </a>
+          
+          
+          
         
         
         
@@ -199,7 +212,10 @@
   
   <div class="footer-bottom">
     <div class="footer-bottom-content">
-      <span class="footer-copyright">© 2025 Daniel Levin, All Rights Reserved.</span>
+      <span class="footer-copyright">© <span id="copyright-year">2026</span> Daniel Levin, All Rights Reserved.</span>
+      <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+      </script>
       
     </div>
   </div>

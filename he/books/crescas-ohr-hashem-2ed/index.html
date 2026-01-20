@@ -198,7 +198,10 @@
   
   <div class="footer-bottom">
     <div class="footer-bottom-content">
-      <span class="footer-copyright">© 2025 דניאל לוין, כל הזכויות שמורות.</span>
+      <span class="footer-copyright">© <span id="copyright-year">2026</span> דניאל לוין, כל הזכויות שמורות.</span>
+      <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+      </script>
       
     </div>
   </div>

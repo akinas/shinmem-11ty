@@ -203,7 +203,10 @@
   
   <div class="footer-bottom">
     <div class="footer-bottom-content">
-      <span class="footer-copyright">© 2025 Daniel Levin, All Rights Reserved.</span>
+      <span class="footer-copyright">© <span id="copyright-year">2026</span> Daniel Levin, All Rights Reserved.</span>
+      <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+      </script>
       
     </div>
   </div>

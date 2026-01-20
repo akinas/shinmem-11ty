@@ -1373,3 +1373,14 @@ html[dir="rtl"] .book-main-content {
       }
 
 /* end of modern footer styles */
+
+.il-buy-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.il-flag-icon {
+  flex-shrink: 0;
+  border: 1px solid rgba(0,0,0,0.1); 
+}
