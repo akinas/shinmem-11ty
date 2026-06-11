@@ -1,9 +1,9 @@
 {
   "hero": {
     "kicker": "מהדורה חדשה ומצופה",
-    "headline": "דרך אמונה (המאמר הראשון) <br><span class=\"hero-headline-author\">מאת רבי אברהם בן שם טוב ביבאג'</span>",
+    "headline": "דרך אמונה <br>(המאמר הראשון) <br><span class=\"hero-headline-author\">מאת רבי אברהם בן שם טוב ביבאג'</span>",
     "supporting": "ספר המופת של מחשבת ישראל בספרד ערב הגירוש, במהדורה ביקורתית ראשונה מסוגה על פי כל כתבי היד והדפוס הראשון.",
-    "image": "https://dreambundles.com/cdn/shop/products/6-x-9-front-back-paperback-book-mockup_608156a9e67bf.png?v=1652242461",
+    "image": "https://res.cloudinary.com/dyj4i2vhr/image/upload/v1781170346/bibago_cover_hero_qgicbn.jpg",
     "cta_text": "לרכישת המהדורה הביקורתית",
     "cta_url": "/he/books/bibago-derekh-emunah_1/"
   }
