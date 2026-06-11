@@ -1,6 +1,6 @@
 ---
 lang: he
-title: "דרך אמונה (המאמר הראושן)"
+title: "דרך אמונה (המאמר הראשון)"
 pub_date: "2025-06-27"
 author: "רבי אברהם בן שם טוב ביבאג'"
 image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1756284623/bibago_cover_shinmem_dn1nxt.jpg"
