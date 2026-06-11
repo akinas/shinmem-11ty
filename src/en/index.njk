@@ -1,15 +1,16 @@
 ---
 layout: "base.njk"
-
 ---
 
-      <div class="home-blog">
-        {# Loop through the 'book' collection, sorted by pub_date (latest first) #}
-        {# The 'true' argument means descending order (latest first) #}
-        {% for book in collections.book | sort(true, false, 'data.pub_date') %}
-          {% if book.data.lang == page.lang %}
-            {% include "book-card.njk" %}
-          {% endif %}
-        {% endfor %}
-      </div>
+{% include "hero.njk" %}
+
+<div class="home-blog" id="books">
+  {# Loop through the 'book' collection, sorted by pub_date (latest first) #}
+  {# The 'true' argument means descending order (latest first) #}
+  {% for book in collections.book | sort(true, false, 'data.pub_date') %}
+    {% if book.data.lang == page.lang %}
+      {% include "book-card.njk" %}
+    {% endif %}
+  {% endfor %}
+</div>
 

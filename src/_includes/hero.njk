@@ -1,0 +1,63 @@
+{# src/_includes/hero.njk #}
+{% if hero %}
+<section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-content">
+      {% if hero.kicker %}
+        <span class="hero-kicker">{{ hero.kicker }}</span>
+      {% endif %}
+      
+      {% if hero.headline %}
+        <h1 class="hero-headline">{{ hero.headline | safe }}</h1>
+      {% endif %}
+      
+      {# Mobile-only Hero Image: placed directly below headline on mobile screen sizes #}
+      {% if hero.image %}
+        <div class="hero-image-container mobile-only">
+          <div class="hero-image-glow"></div>
+          <img 
+            src="{{ hero.image }}" 
+            alt="ShinMem Hero Featured Publication Cover" 
+            class="hero-image"
+            loading="eager"
+          />
+        </div>
+      {% endif %}
+      
+      {% if hero.supporting %}
+        <p class="hero-supporting">{{ hero.supporting | safe }}</p>
+      {% endif %}
+      
+      {% if hero.cta_text and hero.cta_url %}
+        <div class="hero-actions">
+          <a href="{{ hero.cta_url }}" class="hero-cta-btn">
+            {{ hero.cta_text }}
+            <svg class="hero-cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              {% if page.lang == 'he' %}
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              {% else %}
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              {% endif %}
+            </svg>
+          </a>
+        </div>
+      {% endif %}
+    </div>
+
+    {# Desktop-only Hero Image: sits on the opposite side of the flex row #}
+    {% if hero.image %}
+      <div class="hero-image-container desktop-only">
+        <div class="hero-image-glow"></div>
+        <img 
+          src="{{ hero.image }}" 
+          alt="ShinMem Hero Featured Publication Cover" 
+          class="hero-image"
+          loading="eager"
+        />
+      </div>
+    {% endif %}
+  </div>
+</section>
+{% endif %}

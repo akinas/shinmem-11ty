@@ -27,7 +27,7 @@
     
     
   </head>
-  <body>
+  <body class="{% if page.url == '/' or page.url == '/en/' %}is-home{% endif %}">
     <div class="home-container">
       {% include "header.njk" %}
       
