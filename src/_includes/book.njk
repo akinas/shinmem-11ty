@@ -33,15 +33,15 @@
       {% endif %}
       
       {# Book Actions - moved to hero for better UX #}
-      <div class="book-actions-hero">
+      <div class="book-actions-hero button-group">
         {% if status == 'available' and buy_now_url %}
-          <a href="{{ buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button home-button">
+          <a href="{{ buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button">
             {% if page.lang == 'he' %}קנה עכשיו{% else %}Buy Now{% endif %}
           </a>
           
           {% if il_buy_now_url %}
-            <a href="{{ il_buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button home-button il-buy-button">
-               <svg class="il-flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16">
+            <a href="{{ il_buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
+               <svg class="il-flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16" style="margin-inline-end: 6px;">
                  <rect width="22" height="16" fill="#fff"/>
                  <rect y="2" width="22" height="3" fill="#0038b8"/>
                  <rect y="11" width="22" height="3" fill="#0038b8"/>
@@ -51,17 +51,14 @@
             </a>
           {% endif %}
           
-          {% else %}
-        <div class="app-component-container">
-          <button type="button" class="button">
+        {% else %}
+          <button type="button" disabled class="button button-disabled">
             <span>{{ i18n.sold_out[page.lang] }}</span>
           </button>
-        </div>
-      {% endif %}
-        
+        {% endif %}
         
         {% if read_more_url %}
-          <a href="{{ read_more_url }}" target="_blank" rel="noreferrer noopener" class="button">
+          <a href="{{ read_more_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
             {{ i18n.read_more[page.lang] }}
           </a>
         {% endif %}

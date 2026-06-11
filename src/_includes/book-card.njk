@@ -2,7 +2,7 @@
 {# This template is included by index.njk and receives the 'book' variable from the loop. #}
 {% set book_url = '/' ~ page.lang ~ '/books/' ~ (book.data.slug or book.fileSlug) ~ '/' %}
 
-<div class="home-container3"> {# This container might need adjustment based on your CSS layout #}
+<div class="home-container3">
   <div class="blog-post-card3-blog-post-card blog-post-card3-root-class-name1">
     <a href="{{ book_url }}">
       <img
@@ -24,57 +24,45 @@
       </h1>
       <div class="blog-post-card3-container1">
         <span class="blog-post-card3-text2">
-          <span>{{ book.data.description | safe }}</span> {# Use | safe to render HTML from Markdown #}
+          <span>{{ book.data.description | safe }}</span>
         </span>
         <span class="blog-post-card3-text3"><a href="{{ book_url }}">{{ i18n.read_more[page.lang] }}</a></span>
       </div>
       
-      {# Conditional button based on book status #}
-      {% if book.data.status == 'available' %}
-        <a
-          href="{{ book.data.buy_now_url }}"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="blog-post-card3-link"
-          style="cursor:pointer;"
-        >
-          <div class="app-component-container">
-            <button type="button" class="button home-button">
-              <span>{{ i18n.buy_now[page.lang] }}</span>
-            </button>
-          </div>
-        </a>
-        
-        {% if book.data.il_buy_now_url %}
-          <div style="margin-top: 5px;">
-             <a
+      {# Unified button group container #}
+      <div class="button-group">
+        {% if book.data.status == 'available' %}
+          <a
+            href="{{ book.data.buy_now_url }}"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="button"
+          >
+            <span>{{ i18n.buy_now[page.lang] }}</span>
+          </a>
+          
+          {% if book.data.il_buy_now_url %}
+            <a
               href="{{ book.data.il_buy_now_url }}"
               target="_blank"
               rel="noreferrer noopener"
-              class="blog-post-card3-link"
-              style="cursor:pointer;"
+              class="button button-secondary"
             >
-              <div class="app-component-container">
-                <button type="button" class="button home-button il-buy-button">
-                   <svg class="il-flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16">
-                     <rect width="22" height="16" fill="#fff"/>
-                     <rect y="2" width="22" height="3" fill="#0038b8"/>
-                     <rect y="11" width="22" height="3" fill="#0038b8"/>
-                     <polygon points="11,4.5 13,8 11,11.5 9,8" stroke="#0038b8" stroke-width="1" fill="none"/>
-                   </svg>
-                   <span>{% if page.lang == 'he' %}קנה עכשיו בישראל{% else %}Buy in Israel{% endif %}</span>
-                </button>
-              </div>
+               <svg class="il-flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16" style="margin-inline-end: 6px;">
+                 <rect width="22" height="16" fill="#fff"/>
+                 <rect y="2" width="22" height="3" fill="#0038b8"/>
+                 <rect y="11" width="22" height="3" fill="#0038b8"/>
+                 <polygon points="11,4.5 13,8 11,11.5 9,8" stroke="#0038b8" stroke-width="1" fill="none"/>
+               </svg>
+               <span>{% if page.lang == 'he' %}קנה עכשיו בישראל{% else %}Buy in Israel{% endif %}</span>
             </a>
-          </div>
-        {% endif %}
-      {% else %}
-        <div class="app-component-container">
-          <button type="button" class="button">
+          {% endif %}
+        {% else %}
+          <button type="button" disabled class="button button-disabled">
             <span>{{ i18n.out_of_print[page.lang] }}</span>
           </button>
-        </div>
-      {% endif %}
+        {% endif %}
+      </div>
       
     </div>
   </div>
