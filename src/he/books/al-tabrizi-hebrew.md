@@ -1,9 +1,9 @@
 ---
 lang: he
 title: "פירוש עשרים וחמש הקדמות שבמורה נבוכים"
-pub_date: "2026-05-30"
+pub_date: "2026-06-01"
 author: "מוחמד אבן אבו בכר אבן מוחמד אל־תבריזי"
-image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/v1781807431/book_HE_b7r38f.png"
+image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_600/v1781807431/book_HE_b7r38f.png"
 read_more_url: ""
 buy_now_url: "https://www.amazon.com/dp/9659332343"
 il_buy_now_url: "https://bookpod.co.il/product/%d7%a4%d7%99%d7%a8%d7%95%d7%a9-%d7%a2%d7%a9%d7%a8%d7%99%d7%9d-%d7%95%d7%97%d7%9e%d7%a9-%d7%94%d7%a7%d7%93%d7%9e%d7%95%d7%aa-%d7%a9%d7%91%d7%9e%d7%95%d7%a8%d7%94-%d7%a0%d7%91%d7%95%d7%9b%d7%99%d7%9d/"

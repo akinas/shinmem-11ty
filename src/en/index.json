@@ -1,10 +1,10 @@
 {
   "hero": {
-    "kicker": "Featured Publication",
-    "headline": "The Path of Faith <br><span class=\"hero-headline-author\">by Rabbi Abraham ben Shem Tov Bibago</span>",
-    "supporting": "The seminal 15th-century work of Spanish Jewry, presented in its first-ever critical edition based on all extant manuscripts and the original print.",
-    "image": "https://res.cloudinary.com/dyj4i2vhr/image/upload/v1781170346/bibago_cover_hero_qgicbn.jpg",
-    "cta_text": "Order the Critical Edition",
-    "cta_url": "/en/books/bibago-derekh-emunah_1/"
+    "kicker": "New Publication",
+    "headline": "Commentary on Maimonidesʼ Twenty-Five Premises <br><span class=\"hero-headline-author\">by Muḥammad al-Tabrīzī </span>",
+    "supporting": "A new English translation and the newly edited Hebrew rendering of the work that provided the conceptual vocabulary for philosophers such as R. Moses Narboni and R. Hasdai Crescas",
+    "image": "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,w_900/v1781203199/altabrizi_covers_EN_front_crop_res_yezfe3.jpg",
+    "cta_text": "Discover More",
+    "cta_url": "/en/books/al-tabrizi-english-hard/"
   }
 }

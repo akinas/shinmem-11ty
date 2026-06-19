@@ -3,7 +3,7 @@ lang: en
 title: "Metaphysical Treatise"
 pub_date: "2023-06-12"
 author: "Rabbi Moshe ben Yosef Halevi of Seville"
-image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/v1781808367/halawi_cover_2026_05_18_swnkv8.jpg"
+image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_600/v1781808367/halawi_cover_2026_05_18_swnkv8.jpg"
 read_more_url: "https://crescas.org/en/docs/library/maamar/"
 buy_now_url: "https://www.amazon.com/Maamar-Elohi-Rabbi-Yitzhak-Halevi/dp/B0DJPL56SC"
 il_buy_now_url: "https://bookpod.co.il/product/%d7%9e%d7%90%d7%9e%d7%a8-%d7%90%d7%9c%d7%95%d7%94%d7%99/"

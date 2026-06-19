@@ -1,10 +1,10 @@
 {
   "hero": {
     "kicker": "מהדורה חדשה",
-    "headline": "דרך אמונה <br>(המאמר הראשון) <br><span class=\"hero-headline-author\">מאת רבי אברהם בן שם טוב ביבאג'</span>",
-    "supporting": "ספר המופת של מחשבת ישראל בספרד ערב הגירוש, במהדורה ביקורתית ראשונה מסוגה על פי כל כתבי היד והדפוס הראשון.",
-    "image": "https://res.cloudinary.com/dyj4i2vhr/image/upload/v1781170346/bibago_cover_hero_qgicbn.jpg",
-    "cta_text": "לרכישת המהדורה הביקורתית",
+    "headline": "פירוש עשרים וחמש הקדמות שבמורה נבוכים <br><span class=\"hero-headline-author\">מאת מוחמד אל־תבריזי</span>",
+    "supporting": "מהדורה מדויקת של התרגומים העבריים של החיבור שסיפק את התשתית המושגית שעליה ביססו פילוסופים יהודים את פרשנותם וביקורתם ותרם לעיצוב מסלולה של מחשבת ישראל",
+    "image": "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,w_900/v1781203199/altabrizi_covers_HE_front_crop_res_hkazq0.jpg",
+    "cta_text": "לרכישה ולמידע נוסף",
     "cta_url": "/he/books/bibago-derekh-emunah_1/"
   }
 }
