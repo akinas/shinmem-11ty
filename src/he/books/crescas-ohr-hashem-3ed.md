@@ -1,16 +1,17 @@
 ---
 lang: he
 title: "אור השם"
-edition_year: 2023
+misc_info: "מהדורת 2023"
 pub_date: "2023-01-01"
 author: "רבי חסדאי קרשקש"
-image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1691748441/IMG20230811125740_arsllh.jpg"
+image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/v1781807933/crescas_cover_2026_06_18_isoddt.jpg"
 read_more_url: "https://crescas.org/"
 buy_now_url: "https://www.amazon.com/dp/9655982092"
 il_buy_now_url: "https://bookpod.co.il/product/%d7%90%d7%95%d7%a8-%d7%94%d7%a9%d7%9d/"
 status: "available"
 description: "<em>אור השם</em>, אחד מספרי המופת של הפילוסופיה היהודית, נכתב על ידי רבי חסדאי קרשקש – פילוסוף, רב ומדינאי חשוב שפעל בימי הביניים. מהדורה ביקורתית חדשה זו מציגה גרסה מתוקנת של הטקסט המקורי, המבוססת על כתב היד הקדום והמהימן ביותר הקיים."
 tags: "book"
+pdf_id: "crescas_3_sample"
 layout: "book.njk"
 ---
 ## מהדורה שלישית, מתוקנת

@@ -505,12 +505,50 @@ html[dir="rtl"] .lang-switch-toggle {
   margin-bottom: 30px;
 }
 
+.book-actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
 .book-actions-hero {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-  margin-top: 25px;
+  margin-top: 0;
 }
+
+.button-download,
+.button.button-download {
+  background: linear-gradient(135deg, var(--dl-color-success-500) 0%, var(--dl-color-success-300) 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(25, 144, 51, 0.15);
+}
+
+.button-download:hover,
+.button.button-download:hover {
+  background: linear-gradient(135deg, var(--dl-color-success-700) 0%, var(--dl-color-success-500) 100%);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(25, 144, 51, 0.3);
+  transform: translateY(-2px);
+}
+
+.download-action {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .download-action {
+    justify-content: center;
+  }
+  .download-action .button-download {
+    width: 200px;
+    justify-content: center;
+  }
+}
+
 
 .book-main-content {
   font-size: 1.1em;

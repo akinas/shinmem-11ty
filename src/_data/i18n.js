@@ -50,5 +50,9 @@ module.exports = {
   buy_now: {
     en: "Buy Now",
     he: "קנה עכשיו"
+  },
+  download_sample: {
+    en: "Download PDF Sample",
+    he: "הורד עמודים לדוגמה (PDF)"
   }
 };

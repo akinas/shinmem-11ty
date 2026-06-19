@@ -1,15 +1,17 @@
 ---
 lang: en
-title: "The Path of Faith (Book One)"
+title: "The Path of Faith"
 pub_date: "2025-06-27"
+misc_info: Book One
 author: "Rabbi Abraham ben Shem Tov Bibago"
-image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1756284623/bibago_cover_shinmem_dn1nxt.jpg"
+image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/v1781807503/bibago_floral_cover_ub0fsw.jpg"
 read_more_url: ""
 buy_now_url: "https://www.amazon.com/dp/B0FFYK8Z9L"
 il_buy_now_url: "https://bookpod.co.il/product/%d7%93%d7%a8%d7%9a-%d7%90%d7%9e%d7%95%d7%a0%d7%94-%d7%94%d7%9e%d7%90%d7%9e%d7%a8-%d7%94%d7%a8%d7%90%d7%a9%d7%95%d7%9f/"
 status: "available"
 description: "The first part of <em>The Path of Faith (Derekh Emunah)</em> by Rabbi Abraham ben Shem Tov Bibago – a seminal work of late Spanish Jewry – is presented here in its first critical edition, based on all extant manuscripts and the original print."
 tags: "book"
+pdf_id: "bibago_1_sample"
 layout: "book.njk"
 ---
 

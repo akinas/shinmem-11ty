@@ -1,7 +1,7 @@
 ---
 lang: en
 title: "Light of the Lord"
-edition_year: 2021
+misc_info: "2021"
 pub_date: "2021-02-13"
 author: "Rabbi Hasdai Crescas"
 image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1691748435/IMG20230811125809-EDIT_ebh5iw.jpg"
@@ -9,6 +9,7 @@ read_more_url: "https://crescas.org/en/"
 status: "out-of-print"
 description: "A corrected reprint of the first edition, introducing minor textual refinements and a redesigned cover while preserving the same authoritive text."
 tags: "book"
+pdf_id: "crescas_3_sample"
 layout: "book.njk"
 ---
 

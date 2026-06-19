@@ -3,13 +3,14 @@ lang: he
 title: "מאמר אלוהי"
 pub_date: "2023-06-12"
 author: "רבי משה בן יוסף הלוי מסביליה"
-image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_1000/v1691748441/IMG20230811125752_k0fjxr.jpg"
+image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/v1781808367/halawi_cover_2026_05_18_swnkv8.jpg"
 read_more_url: "https://crescas.org/en/docs/library/maamar/"
 buy_now_url: "https://www.amazon.com/Maamar-Elohi-Rabbi-Yitzhak-Halevi/dp/B0DJPL56SC"
 il_buy_now_url: "https://bookpod.co.il/product/%d7%9e%d7%90%d7%9e%d7%a8-%d7%90%d7%9c%d7%95%d7%94%d7%99/"
 status: "available"
 description: "רבי משה בן יוסף הלוי מסביליה, פילוסוף יהודי בולט מהמאה ה-13, נחשב לסמכות עליונה במטאפיזיקה, גיאומטריה ותורת המוזיקה. ספרו <em>מאמר אלוהי</em>, עוסק בשאלת זהותו של המניע הראשון, אחת השאלות המרכזיות בפילוסופיה של ימי הביניים."
 tags: "book"
+pdf_id: "halawi_sample"
 layout: "book.njk"
 ---
 

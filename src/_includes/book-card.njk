@@ -17,8 +17,8 @@
       </span>
       <h1 class="blog-post-card3-text1">
         <span><a href="{{ book_url }}">{{ book.data.title }}</a>
-          {% if book.data.edition_year %}
-            <em style="font-size:70%;font-weight: normal;">({{ book.data.edition_year }})</em>
+          {% if book.data.misc_info %}
+            <em style="font-size:70%;font-weight: normal;">({{ book.data.misc_info }})</em>
           {% endif %}
         </span>
       </h1>

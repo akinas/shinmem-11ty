@@ -28,39 +28,54 @@
     <div class="book-info">
       <h1 class="book-title">{{ title }}{% if title_en and title_en != title %} ({{ title_en }}){% endif %}</h1>
       <p class="book-author">{{ author }}{% if year %} ({{ year }}){% endif %}</p>
-      {% if edition_year %}
-        <p class="book-edition">{{ i18n.edition[page.lang] }} {{ edition_year }}</p>
+      {% if misc_info %}
+        <p class="book-edition">{{ misc_info }}</p>
       {% endif %}
       
       {# Book Actions - moved to hero for better UX #}
-      <div class="book-actions-hero button-group">
-        {% if status == 'available' and buy_now_url %}
-          <a href="{{ buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button">
-            {% if page.lang == 'he' %}קנה עכשיו{% else %}Buy Now{% endif %}
-          </a>
-          
-          {% if il_buy_now_url %}
-            <a href="{{ il_buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
-               <svg class="il-flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16" style="margin-inline-end: 6px;">
-                 <rect width="22" height="16" fill="#fff"/>
-                 <rect y="2" width="22" height="3" fill="#0038b8"/>
-                 <rect y="11" width="22" height="3" fill="#0038b8"/>
-                 <polygon points="11,4.5 13,8 11,11.5 9,8" stroke="#0038b8" stroke-width="1" fill="none"/>
-               </svg>
-               {% if page.lang == 'he' %}קנה עכשיו בישראל{% else %}Buy now in Israel{% endif %}
+      <div class="book-actions-container">
+        <div class="book-actions-hero button-group">
+          {% if status == 'available' and buy_now_url %}
+            <a href="{{ buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button">
+              {% if page.lang == 'he' %}קנה עכשיו{% else %}Buy Now{% endif %}
             </a>
+            
+            {% if il_buy_now_url %}
+              <a href="{{ il_buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
+                 <svg class="il-flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16" style="margin-inline-end: 6px;">
+                   <rect width="22" height="16" fill="#fff"/>
+                   <rect y="2" width="22" height="3" fill="#0038b8"/>
+                   <rect y="11" width="22" height="3" fill="#0038b8"/>
+                   <polygon points="11,4.5 13,8 11,11.5 9,8" stroke="#0038b8" stroke-width="1" fill="none"/>
+                 </svg>
+                 {% if page.lang == 'he' %}קנה עכשיו בישראל{% else %}Buy now in Israel{% endif %}
+              </a>
+            {% endif %}
+            
+          {% else %}
+            <button type="button" disabled class="button button-disabled">
+              <span>{{ i18n.sold_out[page.lang] }}</span>
+            </button>
           {% endif %}
           
-        {% else %}
-          <button type="button" disabled class="button button-disabled">
-            <span>{{ i18n.sold_out[page.lang] }}</span>
-          </button>
-        {% endif %}
-        
-        {% if read_more_url %}
-          <a href="{{ read_more_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
-            {{ i18n.read_more[page.lang] }}
-          </a>
+          {% if read_more_url %}
+            <a href="{{ read_more_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
+              {{ i18n.read_more[page.lang] }}
+            </a>
+          {% endif %}
+        </div>
+
+        {% if pdf_id and pdfs[pdf_id] %}
+          <div class="download-action">
+            <a href="{{ pdfs[pdf_id] }}" target="_blank" rel="noreferrer noopener" class="button button-download">
+              <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" style="margin-inline-end: 6px;">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>{{ i18n.download_sample[page.lang] }}</span>
+            </a>
+          </div>
         {% endif %}
       </div>
     </div>
