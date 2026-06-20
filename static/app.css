@@ -208,6 +208,7 @@ button:disabled:hover {
   flex-wrap: wrap;
   gap: 0.75rem;
   align-items: center;
+  width: 100%;
 }
 
 @media (max-width: 575px) {
@@ -510,6 +511,8 @@ html[dir="rtl"] .lang-switch-toggle {
   flex-direction: column;
   gap: 15px;
   margin-top: 25px;
+  max-width: 480px;
+  width: 100%;
 }
 
 .book-actions-hero {
@@ -543,6 +546,7 @@ html[dir="rtl"] .lang-switch-toggle {
   .download-action {
     justify-content: center;
   }
+
   .download-action .button-download {
     width: 200px;
     justify-content: center;
@@ -591,6 +595,11 @@ html[dir="rtl"] .lang-switch-toggle {
 
   .book-actions-hero {
     justify-content: center;
+  }
+
+  .book-actions-container {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1907,6 +1916,17 @@ html[dir="rtl"] .hero-cta-btn:hover .hero-cta-icon {
   z-index: 1;
   position: relative;
   object-fit: contain;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+a.hero-image-container {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.hero-image-container:hover .hero-image {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 60px -10px rgba(0, 0, 0, 0.75);
 }
 
 /* RTL Layout Flow */
@@ -2003,4 +2023,38 @@ html[dir="rtl"] .hero-content {
     width: 100%;
     justify-content: center;
   }
+}
+
+.buy-options-columns {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+.buy-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.buy-column .button {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.85rem;
+  justify-content: center;
+}
+
+.buy-column h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--dl-color-gray-500);
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+html[dir="rtl"] .buy-column h4 {
+  text-align: center;
 }
