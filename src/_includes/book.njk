@@ -35,29 +35,55 @@
       {# Book Actions - moved to hero for better UX #}
       <div class="book-actions-container">
         <div class="book-actions-hero button-group">
-          {% if status == 'available' and buy_now_url %}
-            <a href="{{ buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button">
-              {% if page.lang == 'he' %}קנה עכשיו{% else %}Buy Now{% endif %}
-            </a>
-            
-            {% if il_buy_now_url %}
-              <a href="{{ il_buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
-                 <svg class="il-flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16" style="margin-inline-end: 6px;">
-                   <rect width="22" height="16" fill="#fff"/>
-                   <rect y="2" width="22" height="3" fill="#0038b8"/>
-                   <rect y="11" width="22" height="3" fill="#0038b8"/>
-                   <polygon points="11,4.5 13,8 11,11.5 9,8" stroke="#0038b8" stroke-width="1" fill="none"/>
-                 </svg>
-                 {% if page.lang == 'he' %}קנה עכשיו בישראל{% else %}Buy now in Israel{% endif %}
-              </a>
+          {% if status == 'available' %}
+            {% if hardcover_buy_now_url %}
+              {# Dual edition mode - columns side-by-side #}
+              <div class="buy-options-columns">
+                {% if buy_now_url or il_buy_now_url %}
+                  <div class="buy-column">
+                    {% if buy_now_url %}
+                      <a href="{{ buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button">
+                        {{ i18n.buy_paperback[page.lang] }}
+                      </a>
+                    {% endif %}
+                    {% if il_buy_now_url %}
+                      <a href="{{ il_buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
+                        {{ i18n.buy_paperback_il[page.lang] }}
+                      </a>
+                    {% endif %}
+                  </div>
+                {% endif %}
+                
+                <div class="buy-column">
+                  <a href="{{ hardcover_buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button">
+                    {{ i18n.buy_hardcover[page.lang] }}
+                  </a>
+                  {% if hardcover_il_buy_now_url %}
+                    <a href="{{ hardcover_il_buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
+                      {{ i18n.buy_hardcover_il[page.lang] }}
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            {% else %}
+              {# Single edition mode (default) #}
+              {% if buy_now_url %}
+                <a href="{{ buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button">
+                  {{ i18n.buy_now[page.lang] }}
+                </a>
+                
+                {% if il_buy_now_url %}
+                  <a href="{{ il_buy_now_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
+                    {{ i18n.buy_now_il[page.lang] }}
+                  </a>
+                {% endif %}
+              {% endif %}
             {% endif %}
-            
           {% else %}
             <button type="button" disabled class="button button-disabled">
               <span>{{ i18n.sold_out[page.lang] }}</span>
             </button>
           {% endif %}
-          
           {% if read_more_url %}
             <a href="{{ read_more_url }}" target="_blank" rel="noreferrer noopener" class="button button-secondary">
               {{ i18n.read_more[page.lang] }}

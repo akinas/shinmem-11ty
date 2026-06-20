@@ -13,7 +13,7 @@
       
       {# Mobile-only Hero Image: placed directly below headline on mobile screen sizes #}
       {% if hero.image %}
-        <div class="hero-image-container mobile-only">
+        <a href="{{ hero.cta_url }}" class="hero-image-container mobile-only">
           <div class="hero-image-glow"></div>
           <img 
             src="{{ hero.image }}" 
@@ -21,7 +21,7 @@
             class="hero-image"
             loading="eager"
           />
-        </div>
+        </a>
       {% endif %}
       
       {% if hero.supporting %}
@@ -48,7 +48,7 @@
 
     {# Desktop-only Hero Image: sits on the opposite side of the flex row #}
     {% if hero.image %}
-      <div class="hero-image-container desktop-only">
+      <a href="{{ hero.cta_url }}" class="hero-image-container desktop-only">
         <div class="hero-image-glow"></div>
         <img 
           src="{{ hero.image }}" 
@@ -56,7 +56,7 @@
           class="hero-image"
           loading="eager"
         />
-      </div>
+      </a>
     {% endif %}
   </div>
 </section>

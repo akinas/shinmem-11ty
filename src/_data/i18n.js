@@ -51,6 +51,26 @@ module.exports = {
     en: "Buy Now",
     he: "קנה עכשיו"
   },
+  buy_now_il: {
+    en: "Buy in Israel",
+    he: "קנה עכשיו בישראל"
+  },
+  buy_paperback: {
+    en: "Buy Paperback",
+    he: "לרכישה (כריכה רכה)"
+  },
+  buy_paperback_il: {
+    en: "Buy Paperback in Israel",
+    he: "לרכישה בישראל (כריכה רכה)"
+  },
+  buy_hardcover: {
+    en: "Buy Hardcover",
+    he: "לרכישה (כריכה קשה)"
+  },
+  buy_hardcover_il: {
+    en: "Buy Hardcover in Israel",
+    he: "לרכישה בישראל (כריכה קשה)"
+  },
   download_sample: {
     en: "Download PDF Sample",
     he: "הורד עמודים לדוגמה (PDF)"

@@ -1,13 +1,15 @@
 ---
 lang: he
 title: "פירוש עשרים וחמש הקדמות"
-misc_info: "אנגלית/כריכה קשה"
+misc_info: "אנגלית"
 pub_date: "2026-05-30"
 author: "מוחמד אבן אבו בכר אבן מוחמד אל־תבריזי"
 image_src: "https://res.cloudinary.com/dyj4i2vhr/image/upload/c_scale,h_600/v1781807433/book_EN_o4vquk.png"
 read_more_url: ""
-buy_now_url: "https://www.amazon.com/dp/965933236X"
-il_buy_now_url: ""
+buy_now_url: "https://www.amazon.com/dp/9659332351"
+il_buy_now_url: "https://bookpod.co.il/product/commentary-on-maimonides%ca%bc-twenty-five-premises/"
+hardcover_buy_now_url: "https://www.amazon.com/dp/965933236X"
+hardcover_il_buy_now_url: ""
 status: "available"
 description: "נוסח תרגומו העברי של ר’ יצחק בן נתן בצד תרגום אנגלי חדש של נוסח המקור המשוחזר."
 tags: "book"
@@ -22,7 +24,12 @@ layout: "book.njk"
 
 למרות חשיבותו הרבה של החיבור, מעולם לא פורסמה מהדורה מדעית של אף אחד מתרגומיו לעברית. כרך זה נועד למלא את החסר ולהגיש לקורא מהדורה מדויקת של התרגומים העבריים מימי הביניים. בעבודה על קביעת הנוסח, נערכה השוואה מקיפה בין שני התרגומים המלאים של החיבור ובינם לבין המקור הערבי. מהדורה זו מציגה טקסט מהימן ונקי מן השיבושים הרבים שדבקו בו לאורך הדורות. כך, יכול פירוש אל־תבריזי לשוב ולתפוס את מקומו הראוי כחיבור שתרם לעיצוב מסלולה של מחשבת ישראל, וכטקסט שסיפק את התשתית המושגית שעליה ביססו פילוסופים יהודים את פרשנותם וביקורתם.
 
-* כריכה קשה
+**כריכה רכה:**
+* 220 עמודים
+* 15.2 על 22.9 סמ'
+* ISBN 978-965-93323-5-9
+
+**כריכה קשה:**
 * 220 עמודים
 * 15.9 על 23.5 סמ'
 * ISBN 978-965-93323-6-6
@@ -40,4 +47,5 @@ layout: "book.njk"
 <a href="https://bookpod.app.link/?bookid=16444" target="_blank" rel="noreferrer noopener" class="button home-button">
             לרכישת ספר אלקטרוני
           </a>
+
 
